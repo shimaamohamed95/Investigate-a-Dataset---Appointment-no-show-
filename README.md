@@ -1,25 +1,15 @@
-# Use this cell to set up import statements for all of the packages that you
+
 #   plan to use.
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Remember to include a 'magic word' so that your visualizations are plotted
-#   inline with the notebook. See this page for more:
-#   http://ipython.readthedocs.io/en/stable/interactive/magics.html
-# Upgrade pandas to use dataframe.explode() function. 
-!pip install --upgrade pandas==0.25.0
-
 
 
 Data Wrangling¶
 Tip: In this section of the report, you will load in the data, check for cleanliness, and then trim and clean your dataset for analysis. Make sure that you document your data cleaning steps in mark-down cells precisely and justify your cleaning decisions.
 General Properties¶
-Tip: You should not perform too many operations in each cell. Create cells freely to explore your data. One option that you can take with this project is to do a lot of explorations in an initial notebook. These don't have to be organized, but make sure you use enough comments to understand the purpose of each code cell. Then, after you're done with your analysis, create a duplicate notebook where you will trim the excess and organize your steps so that you have a flowing, cohesive report.
-
-
-In [66]:
 
 
 
@@ -477,12 +467,6 @@ In [73]:
 
 df.drop(df[df["age"]< 0].index, inplace= True)
 df.describe()
-
-
-
-
-
-Out[73]:
 
 
 
